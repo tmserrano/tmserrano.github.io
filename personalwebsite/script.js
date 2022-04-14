@@ -1,74 +1,79 @@
-/*section transitions*/
+/*section transitions (Horizontal and vertical)*/
+const reveals = document.querySelectorAll(".section");
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hiddenX");
+  entry.target.classList.remove("section--hiddenY");
+  observer.unobserve(entry.target);
+};
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.2,
+  rootMargin: "-100px",
+});
+reveals.forEach((section) => {
+  sectionObserver.observe(section);
+});
 
-/*Up Transition*/
-function revealUp() {
-  var reveals = document.querySelectorAll(".reveal-up");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } /*else {
-        reveals[i].classList.remove("active");
-      }*/
-  }
-}
-window.addEventListener("scroll", revealUp);
-
-/*Left Transition*/
-function revealLeft() {
-  var reveals = document.querySelectorAll(".reveal-left");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } /*else {
-        reveals[i].classList.remove("active");
-      }*/
-  }
-}
-window.addEventListener("scroll", revealLeft);
-
-/*Right Transition*/
-function revealRight() {
-  var reveals = document.querySelectorAll(".reveal-right");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 250;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } /*else {
-        reveals[i].classList.remove("active");
-      }*/
-  }
-}
-window.addEventListener("scroll", revealRight);
-
-
-/*scroll up to show navbar*/
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myNav").style.top = "0";
+/*when scroll down hide navbar && when scroll up show navbar*/
+let prevScroll = window.pageYOffset;
+const dynamicNavbar = () => {
+  let currentScroll = window.pageYOffset;
+  if (prevScroll > currentScroll) {
+    document.getElementById("myNav").style.top = 0;
   } else {
-    document.getElementById("myNav").style.top = "-300px";
+    document.getElementById("myNav").style.top = "-150px";
   }
-  prevScrollpos = currentScrollPos;
-}
+  prevScroll = currentScroll;
+};
+window.addEventListener("scroll", dynamicNavbar);
 
-/*navbar drop toggle | colapse navbar on click*/
+/*show/hide links from hamburger && collapse navbar on click*/
 const navbar = document.getElementById("navi");
 const link = document.getElementById("nav-item");
-
-toggle.onclick = function () {
+const showHideNav = () => {
   navbar.classList.toggle("active");
-}
+};
+toggle.addEventListener("click", showHideNav);
+link.addEventListener("click", showHideNav);
 
-link.onclick = function () {
-  navbar.classList.toggle("active");
-}
+//Slide Implementation
+const slides = document.querySelectorAll(".slideContainer__project");
+const btnLeft = document.querySelector(".slideContainer__btn--left");
+const btnRight = document.querySelector(".slideContainer__btn--right");
+
+let curSlide = 0;
+const maxSlide = slides.length;
+
+const moveSlide = function (slide) {
+  slides.forEach((s, i) => {
+    s.style.transform = `translateX(${100 * (i - slide)}%)`;
+  });
+};
+
+const nextSlide = () => {
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  moveSlide(curSlide);
+};
+
+const previousSlide = () => {
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+  moveSlide(curSlide);
+};
+
+const init = () => {
+  moveSlide(0);
+};
+init();
+
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", previousSlide);

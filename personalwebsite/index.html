@@ -1,316 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiago Serrano | Self-Taugh Developer</title>
-    <!--linkar o html ao css-->
-    <link rel="stylesheet" href="css/styles.css">
-    <!--buscar o favicon à pasta do projeto-->
-    <link rel="icon" href="favicon.ico">
-    <!--buscar fonts ao google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
 
-<body>
+  <body>
     <!--navbar-->
-    <nav class="navbar" id="myNav">
-        <div class="nav-logo">
-            <a href="#"><img src="images/logotop.png" alt=""></a>
-        </div>
-        <div class="toggle-button" id="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="nav-links" id="navi">
-            <ul id="nav-item">
-                <li><a class="hover-underline-animation" href="#about">About </a></li>
-                <li><a class="hover-underline-animation" href="#my-skills">My Skills</a></li>
-                <li><a class="hover-underline-animation" href="#work">Works</a></li>
-                <li><a class="hover-underline-animation" href="#contact-me">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
 
+    <nav class="nav" id="myNav">
+      <div class="nav__logo">
+        <a href="#"><img src="images/logotop.png" alt="" /></a>
+      </div>
+      <div class="toggle__button" id="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav__list" id="navi">
+        <ul id="nav-item">
+          <li><a class="navList__item--hover" href="#about">About </a></li>
+          <li>
+            <a class="navList__item--hover" href="#my-skills">My Skills</a>
+          </li>
+          <li><a class="navList__item--hover" href="#work">Works</a></li>
+          <li>
+            <a class="navList__item--hover" href="#contact-me">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!--jumbotron Section-->
 
-    <section class="jumbotron-section">
-        <div class="jumbotron-title">
-            <h2 class="main-title">Tiago, <br> a Self-Taught Developer</h2>
-        </div>
-        <div class="jumbotron-subtitle">
-            <p class="main-subtitle typewriter-1">Helping start-ups, small business and agencies</p>
-            <p class="main-subtitle typewriter-2">achive high quality and exceptional user experience.</p>
-        </div>
+    <section class="jumbotron">
+      <div class="jumbotron__titleContainer">
+        <h2 class="jumbotron__titleContainer--format">
+          Tiago, <br />
+          a Self-Taught Developer
+        </h2>
+      </div>
+      <div class="jumbotron__subtitleContainer">
+        <p class="jumbotron__subtitleContainer--format typewriter-1">
+          Helping start-ups, small business and agencies
+        </p>
+        <p class="jumbotron__subtitleContainer--format typewriter-2">
+          achive high quality and exceptional user experience.
+        </p>
+      </div>
     </section>
-
 
     <!--Hello Section-->
 
-    <section id="about" class="white-section">
-        <div class=" hello-container reveal-up">
-            <img class="profile-img" src="images/img-tiago.jpg" alt="">
-            <h2>Hello World,</h2>
-            <p class="p-dark">I consider myself a highly motivated and results-oriented multipurpose
-                professional
-                who cares
-                for efficiency at management and operation. At the moment I am developing skills in the IT
-                area (Software
-                and Web), so I am available to embrace a challenge in those areas.</p>
-        </div>
+    <section id="about" class="section--white section section--hiddenY">
+      <div class="hello__container">
+        <img class="helloContainer__img" src="images/img-tiago.jpg" alt="" />
+        <h2>Hello World,</h2>
+        <p class="p--dark">
+          I consider myself a highly motivated and results-oriented multipurpose
+          professional who cares for efficiency at management and operation. At
+          the moment I am developing skills in the IT area (Software and Web),
+          so I am available to embrace a challenge in those areas.
+        </p>
+      </div>
     </section>
-
 
     <!--Skills Section-->
 
-    <section id="my-skills" class="colored-section">
-        <div class="reveal-left">
-            <h2>My Skills</h2>
-            <div class="skills-container">
-                <div>
-                    <div>
-                        <img class="skill-img" src="images/bm-skill.png" alt="bm-img">
-                    </div>
-                    <div>
-                        <h3>Business and Management</h3>
-                        <p class="p-light">
-                            Management control and planning<br>
-                            Optimization of logistic processes
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img class="skill-img" src="images/soft-skills.png" alt="soft-skills-img">
-                    </div>
-                    <div>
-                        <h3>Soft Skills</h3>
-                        <p class="p-light">Communication<br>Leadership<br>Critical Thinking<br>Problem Solving<br>
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img class="skill-img" src="images/it-skill.png" alt="it-img">
-                    </div>
-                    <div>
-                        <h3>Information Technology</h3>
-                        <p class="p-light">Consulting on IT projects <br> IT development
-                        </p>
-                    </div>
-                </div>
+    <section id="my-skills" class="section--colored">
+      <div class="section section--hiddenX">
+        <h2>My Skills</h2>
+        <div class="skills__container">
+          <div>
+            <div>
+              <img
+                class="skillsContainer__img"
+                src="images/bm-skill.png"
+                alt="bm-img"
+              />
             </div>
+            <div>
+              <h3>Business and Management</h3>
+              <p class="p--light">
+                Management control and planning<br />
+                Optimization of logistic processes
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                class="skillsContainer__img"
+                src="images/soft-skills.png"
+                alt="soft-skills-img"
+              />
+            </div>
+            <div>
+              <h3>Soft Skills</h3>
+              <p class="p--light">
+                Communication<br />Leadership<br />Critical Thinking<br />Problem
+                Solving<br />
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                class="skillsContainer__img"
+                src="images/it-skill.png"
+                alt="it-img"
+              />
+            </div>
+            <div>
+              <h3>Information Technology</h3>
+              <p class="p--light">
+                Consulting on IT projects <br />
+                IT development
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!--Projects Section-->
 
-    <!--Works Section-->
-
-    <section id="work" class="white-section reveal-right">
-        <h2>Works</h2>
-        <div class="carousel">
-            <div class="slides">
-                <input type="radio" name="radio-buttons" id="img-1" checked />
-                <div class="slide-container">
-                    <div class="slide-work">
-                        <div>
-                            <img class="project-img" src="images/tincat-site.jpg" alt="">
-                        </div>
-                        <div class="content-work">
-                            <h3>"TinCat App" Landing Page</h3>
-                            <p class="p-light">This was my first project. basically it's a landing page for a cat dating
-                                app. I used vibrant colors for the theme in order to arouse interest to the audience.
-                                Project that gave me great pleasure in doing it, not because it was the first, but also
-                                because it filled me with great satisfaction to see the final result of it.</p>
-                            <p><img class="tec-img" src="images/html-5.png" alt=""><img class="tec-img"
-                                    src="images/css-3.png" alt=""><img class="tec-img" src="images/bootstrap.png"
-                                    alt=""></p>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <label for="img-6" class="prev-slide">
-                            <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-2" class="next-slide">
-                            <span>&rsaquo;</span>
-                        </label>
-                    </div>
-                </div>
-
-                <input type="radio" name="radio-buttons" id="img-2" />
-                <div class="slide-container">
-                    <div class="slide-work">
-                        <div>
-                            <img class="project-img" src="images/toquio-page.jpg" alt="">
-                        </div>
-                        <div class="content-work">
-                            <h3>"Visite Tóquio" Landing Page</h3>
-                            <p class="p-light">Development of a landing page about the capital of Japan, which I
-                                identify with professional, moral and ethical values. Project that aims at the
-                                cultural presentation of this beautiful city, talking about places to visit, where to
-                                eat and where to stay.</p>
-                            <p><img class="tec-img" src="images/html-5.png" alt=""><img class="tec-img"
-                                    src="images/css-3.png" alt=""></p>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <label for="img-1" class="prev-slide">
-                            <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-3" class="next-slide">
-                            <span>&rsaquo;</span>
-                        </label>
-                    </div>
-                </div>
-                <input type="radio" name="radio-buttons" id="img-3" />
-                <div class="slide-container">
-                    <div class="slide-work">
-                        <div>
-                            <img class="project-img" src="images/personal-web.jpg" alt=""></p>
-                        </div>
-                        <div class="content-work">
-                            <h3>Personal Website</h3>
-                            <p class="p-light">My personal page where I present myself as a professional and reveal my
-                                soft skills and technical skills as well as my completed and ongoing projects.
-                                Use of blue colors that convey confidence and effective results. And presentation of a
-                                minimalist and simple look just like I am.</p>
-                            <p><img class="tec-img" src="images/html-5.png" alt=""><img class="tec-img"
-                                    src="images/css-3.png" alt=""><img class="tec-img" src="images/javascript.png"
-                                    alt="">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <label for="img-2" class="prev-slide">
-                            <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-4" class="next-slide">
-                            <span>&rsaquo;</span>
-                        </label>
-                    </div>
-                </div>
-                <input type="radio" name="radio-buttons" id="img-4" />
-                <div class="slide-container">
-                    <div class="slide-work">
-                        <div>
-                            <img class="project-img" src="images/tasks-project.jpg" alt="">
-                        </div>
-                        <div class="content-work">
-                            <h3>To Do App</h3>
-                            <p class="p-light">Web application development (frontend and backend), which main objective is to organize in a simple and
-                                easy way the tasks to be performed during daily life. It has a simple and clean
-                                interface, a logging system, a login system, entering tasks, deleting tasks, editing
-                                tasks, and changing the status of tasks (CRUD functionality).
-                            </p>
-                            <p><img class="tec-img" src="images/html-5.png" alt=""><img class="tec-img"
-                                    src="images/css-3.png" alt=""><img class="tec-img" src="images/javascript.png"
-                                    alt=""><img class="tec-img" src="images/php.png" alt=""><img class="tec-img"
-                                    src="images/mysql.png" alt=""></p>
-
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <label for="img-3" class="prev-slide">
-                            <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-5" class="next-slide">
-                            <span>&rsaquo;</span>
-                        </label>
-                    </div>
-                </div>
-                <input type="radio" name="radio-buttons" id="img-5" />
-                <div class="slide-container">
-                    <div class="slide-work">
-                        <div>
-                            <img class="project-img" src="images/cms-page.jpg" alt="">
-                        </div>
-                        <div class="content-work">
-                            <h3>CMS - Social Network(On progress)</h3>
-                            <p class="p-light">Project in progress, which main objective is a blog-style social network.
-                                It has a simple interface, composed of the front and backoffice, it contains a
-                                registration system, a login system, we can create, read, edit and delete categories,
-                                users, posts, comments (CRUD functionality). We also have a dashboard
-                                that allows us to check the amount of data we have allocated.</p>
-                            <p><img class="tec-img" src="images/html-5.png" alt=""><img class="tec-img"
-                                    src="images/bootstrap.png" alt=""><img class="tec-img" src="images/php.png"
-                                    alt=""><img class="tec-img" src="images/mysql.png" alt=""></p>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <label for="img-4" class="prev-slide">
-                            <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-6" class="next-slide">
-                            <span>&rsaquo;</span>
-                        </label>
-                    </div>
-                </div>
-                <input type="radio" name="radio-buttons" id="img-6" />
-                <div class="slide-container">
-                    <div class="slide-work">
-                        <div>
-                            <img class="project-img" src="images/ecommerce.jpg" alt="">
-                        </div>
-                        <div class="content-work">
-                            <h3>eCommerce Website(On progress)</h3>
-                            <p class="p-light">Project in initial phase, whose main objective is an online store for
-                                mobile phones and tablets. It will have the functionality to create, read, edit and
-                                delete (CRUD functionality). We will have a backoffice for the administrator as well as
-                                for the visitor. We will also have the option to rate the product and comment when
-                                someone
-                                buy a product.</p>
-                            <p><img class="tec-img" src="images/html-5.png" alt=""><img class="tec-img"
-                                    src="images/css-3.png" alt=""><img class="tec-img" src="images/bootstrap.png"
-                                    alt=""><img class="tec-img" src="images/javascript.png" alt=""><img class="tec-img"
-                                    src="images/php.png" alt=""><img class="tec-img" src="images/mysql.png" alt=""></p>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <label for="img-5" class="prev-slide">
-                            <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-1" class="next-slide">
-                            <span>&rsaquo;</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
+    <section id="work" class="section--white section section--hiddenX">
+      <h2>Works</h2>
+      <div class="slide__container">
+        <div class="slideContainer__project">
+          <div>
+            <img
+              class="slideContainerProject__img"
+              src="images/tincat-site.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slideContainerProject_content">
+            <h3>"TinCat App" Landing Page</h3>
+            <p class="p--light">
+              This was my first project. basically it's a landing page for a cat
+              dating app. I used vibrant colors for the theme in order to arouse
+              interest to the audience. Project that gave me great pleasure in
+              doing it, not because it was the first, but also because it filled
+              me with great satisfaction to see the final result of it.
+            </p>
+            <p>
+              <img
+                class="slideContainerProject_tec"
+                src="images/html-5.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/css-3.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/bootstrap.png"
+                alt=""
+              />
+            </p>
+          </div>
         </div>
-    </section>
+        <div class="slideContainer__project">
+          <div>
+            <img
+              class="slideContainerProject__img"
+              src="images/toquio-page.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slideContainerProject_content">
+            <h3>"Visite Tóquio" Landing Page</h3>
+            <p class="p--light">
+              Development of a landing page about the capital of Japan, which I
+              identify with professional, moral and ethical values. Project that
+              aims at the cultural presentation of this beautiful city, talking
+              about places to visit, where to eat and where to stay.
+            </p>
+            <p>
+              <img
+                class="slideContainerProject_tec"
+                src="images/html-5.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/css-3.png"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div class="slideContainer__project">
+          <div>
+            <img
+              class="slideContainerProject__img"
+              src="images/personal-web.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slideContainerProject_content">
+            <h3>Personal Website</h3>
+            <p class="p--light">
+              My personal page where I present myself as a professional and
+              reveal my soft skills and technical skills as well as my completed
+              and ongoing projects. Use of blue colors that convey confidence
+              and effective results. And presentation of a minimalist and simple
+              look just like I am.
+            </p>
+            <p>
+              <img
+                class="slideContainerProject_tec"
+                src="images/html-5.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/css-3.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/javascript.png"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
 
+        <div class="slideContainer__project">
+          <div>
+            <img
+              class="slideContainerProject__img"
+              src="images/tasks-project.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slideContainerProject_content">
+            <h3>To Do App</h3>
+            <p class="p--light">
+              Web application development (frontend and backend), which main
+              objective is to organize in a simple and easy way the tasks to be
+              performed during daily life. It has a simple and clean interface,
+              a logging system, a login system, entering tasks, deleting tasks,
+              editing tasks, and changing the status of tasks (CRUD
+              functionality).
+            </p>
+            <p>
+              <img
+                class="slideContainerProject_tec"
+                src="images/html-5.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/css-3.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/javascript.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/php.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/mysql.png"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div class="slideContainer__project">
+          <div>
+            <img
+              class="slideContainerProject__img"
+              src="images/cms-page.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slideContainerProject_content">
+            <h3>CMS - Social Network(On progress)</h3>
+            <p class="p--light">
+              Project in progress, which main objective is a blog-style social
+              network. It has a simple interface, composed of the front and
+              backoffice, it contains a registration system, a login system, we
+              can create, read, edit and delete categories, users, posts,
+              comments (CRUD functionality). We also have a dashboard that
+              allows us to check the amount of data we have allocated.
+            </p>
+            <p>
+              <img
+                class="slideContainerProject_tec"
+                src="images/html-5.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/bootstrap.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/php.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/mysql.png"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+
+        <div class="slideContainer__project">
+          <div>
+            <img
+              class="slideContainerProject__img"
+              src="images/ecommerce.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slideContainerProject_content">
+            <h3>eCommerce Website(On progress)</h3>
+            <p class="p--light">
+              Project in initial phase, whose main objective is an online store
+              for mobile phones and tablets. It will have the functionality to
+              create, read, edit and delete (CRUD functionality). We will have a
+              backoffice for the administrator as well as for the visitor. We
+              will also have the option to rate the product and comment when
+              someone buy a product.
+            </p>
+            <p>
+              <img
+                class="slideContainerProject_tec"
+                src="images/html-5.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/css-3.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/bootstrap.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/javascript.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/php.png"
+                alt=""
+              /><img
+                class="slideContainerProject_tec"
+                src="images/mysql.png"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+
+        <button class="slideContainer__btn slideContainer__btn--left">
+          &lsaquo;
+        </button>
+        <button class="slideContainer__btn slideContainer__btn--right">
+          &rsaquo;
+        </button>
+      </div>
+    </section>
 
     <!--Contact Section-->
 
-    <section id="contact-me" class="colored-section reveal-up">
-        <div>
-            <h2>Get In Touch</h2>
-            <h3>Your success are my results.</h3>
-            <p class="p-dark"> Shall we change the World? <br>I'm here to help you. Let's talk</p>
-            <a class="btn" href="mailto:tiagoserrano92@gmail.com">CONTACT ME</a>
-        </div>
+    <section id="contact-me" class="section--colored section section--hiddenY">
+      <div>
+        <h2>Get In Touch</h2>
+        <h3>Your success are my results.</h3>
+        <p class="p--dark">
+          Shall we change the World? <br />I'm here to help you. Let's talk
+        </p>
+        <a class="contact__btn--format" href="mailto:tiagoserrano92@gmail.com"
+          >CONTACT ME</a
+        >
+      </div>
     </section>
-
 
     <!--Footer Section-->
 
-    <section class="bottom-section">
-        <div>
-            <a class="footer-link" href="https://www.linkedin.com/"><img src="images/linkedin.png" alt=""></a>
-            <a class="footer-link" href="https://facebook.com/"><img src="images/facebook.png" alt=""></a>
-            <a class="footer-link" href="https://twitter.com/"><img src="images/twitter.png" alt=""></a>
-        </div>
-        <div>
-            <p class="paragraph-last">© 2022 Tiago</p>
-        </div>
+    <section class="footer">
+      <div>
+        <a class="footer__link" href="https://www.linkedin.com/"
+          ><img src="images/linkedin.png" alt=""
+        /></a>
+        <a class="footer__link" href="https://facebook.com/"
+          ><img src="images/facebook.png" alt=""
+        /></a>
+        <a class="footer__link" href="https://twitter.com/"
+          ><img src="images/twitter.png" alt=""
+        /></a>
+      </div>
+      <div>
+        <p class="footer__paragraph">© 2022 Tiago</p>
+      </div>
     </section>
-    <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
