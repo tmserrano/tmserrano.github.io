@@ -116,6 +116,7 @@ h3 {
 
 .nav .nav__logo img {
   width: 50px;
+  height: 100%;
   margin: 8px;
   animation: rotation 10s infinite linear;
 }
@@ -252,6 +253,7 @@ h3 {
 
 .helloContainer__img {
   width: 200px;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -266,6 +268,7 @@ h3 {
 
 .skillsContainer__img {
   width: 60px;
+  height: 100%;
 }
 
 /*Projects Section */
@@ -321,16 +324,19 @@ h3 {
 .slideContainerProject_content {
   text-align: justify;
   width: 350px;
+  height: 100%;
   margin: 0 75px;
 }
 
 .slideContainerProject__img {
   width: 350px;
+  height: 100%;
   margin: 0 75px;
 }
 
 .slideContainerProject_tec {
   width: 35px;
+  height: 100%;
   margin: 1px;
 }
 
@@ -366,6 +372,7 @@ h3 {
 
 .footer__link img {
   width: 30px;
+  height: 100%;
 }
 
 .footer__paragraph {
