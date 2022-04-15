@@ -26,7 +26,6 @@ const dynamicNavbar = () => {
     document.getElementById("myNav").style.top = "-100px";
   }
   prevScroll = currentScroll;
-  console.log(prevScroll);
 };
 window.addEventListener("scroll", dynamicNavbar);
 
