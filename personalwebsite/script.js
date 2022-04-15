@@ -17,15 +17,16 @@ reveals.forEach((section) => {
 });
 
 /*when scroll down hide navbar && when scroll up show navbar*/
-let prevScroll = window.pageYOffset;
+let prevScroll = 0;
 const dynamicNavbar = () => {
   let currentScroll = window.pageYOffset;
   if (prevScroll > currentScroll) {
     document.getElementById("myNav").style.top = 0;
   } else {
-    document.getElementById("myNav").style.top = "-150px";
+    document.getElementById("myNav").style.top = "-100px";
   }
   prevScroll = currentScroll;
+  console.log(prevScroll);
 };
 window.addEventListener("scroll", dynamicNavbar);
 
