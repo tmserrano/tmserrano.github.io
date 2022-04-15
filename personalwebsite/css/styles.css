@@ -3,6 +3,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 /*Some properties for title and subtitle*/
 h2 {
   color: #275074;
