@@ -425,6 +425,7 @@ h3 {
 
   .nav__list ul li a {
     padding-top: 16px;
+    margin-left: 0;
   }
 
   #navi.active {
