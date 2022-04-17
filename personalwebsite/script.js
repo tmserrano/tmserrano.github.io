@@ -4,7 +4,8 @@ const revealSection = (entries, observer) => {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hiddenX");
-  entry.target.classList.remove("section--hiddenY");
+  entry.target.classList.remove("section--hiddenYUP");
+  entry.target.classList.remove("section--hiddenYDown");
   observer.unobserve(entry.target);
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
