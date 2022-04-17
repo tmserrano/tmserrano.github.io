@@ -488,7 +488,7 @@ h3 {
 /*Responsive 460px max width - mobile*/
 @media (max-width: 460px) {
   h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   h3 {
@@ -500,7 +500,7 @@ h3 {
   }
 
   .jumbotron__subtitleContainer--format {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   @keyframes animated-text__1 {
@@ -509,7 +509,7 @@ h3 {
     }
 
     to {
-      width: 320px;
+      width: 330px;
     }
   }
 
@@ -519,7 +519,7 @@ h3 {
     }
 
     to {
-      width: 368px;
+      width: 338px;
     }
   }
 }
