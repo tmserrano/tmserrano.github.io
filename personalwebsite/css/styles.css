@@ -488,15 +488,15 @@ h3 {
 /*Responsive 460px max width - mobile*/
 @media (max-width: 460px) {
   h2 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .jumbotron__subtitleContainer--format {
