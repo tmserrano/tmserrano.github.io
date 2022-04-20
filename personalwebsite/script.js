@@ -11,7 +11,7 @@ const revealSection = (entries, observer) => {
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
   threshold: 0.2,
-  rootMargin: "-150px",
+  rootMargin: "-125px",
 });
 reveals.forEach((section) => {
   sectionObserver.observe(section);
