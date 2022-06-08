@@ -398,10 +398,10 @@ h3 {
   }
 }
 
-@media (max-width: 1016px) {
+@media (max-width: 999px) {
   .slide__container,
   .slideContainer__project {
-    height: 560px;
+    height: 600px;
   }
   .slideContainer__project {
     top: 0;
@@ -486,6 +486,11 @@ h3 {
     width: 80%;
   }
 
+  .slide__container,
+  .slideContainer__project {
+    height: 525px;
+  }
+
   .slideContainerProject__img {
     width: 300px;
   }
@@ -531,5 +536,9 @@ h3 {
     to {
       width: 338px;
     }
+  }
+  .slide__container,
+  .slideContainer__project {
+    height: 475px;
   }
 }
