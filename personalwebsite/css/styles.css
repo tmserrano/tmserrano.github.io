@@ -110,8 +110,7 @@ h3 {
 .nav .nav__logo img {
   width: 50px;
   height: 100%;
-  margin: 8px;
-  animation: rotation 10s infinite linear;
+  margin: 20px;
 }
 
 @keyframes rotation {
